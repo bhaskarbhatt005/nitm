@@ -192,14 +192,10 @@ span{
     font-size: 1.6rem;
 }
 
-.tab-titles{
-    display: flex;
-    margin: 20px 0px 40px;
-}
 
 
 .about-page{
-    height: 90%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -225,132 +221,6 @@ span{
 
 .about-page-content p{
     font-size: 1.6rem;
-}
-
-.tab-links{
-    margin-right: 5rem;
-    font-size: 1.8px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 0.3rem;
-    background: var(--main-color);
-    position: absolute;
-    left: 0;
-    bottom: -0.8rem;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 100%;
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin: 1rem 0;
-    font-size: 1.6rem;
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
-    display: block;
-}
-
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.project{
-    background: var(--snd-bf-color);
-}
-
-.project h2{
-    margin-bottom: 4rem;
-}
-
-.project-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.project-container .project-box{
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
-}
-
-a .project-box img{
-    width: 100%;
-    transition: 0.5s ease;
-    opacity: 0.7;
-}
-
-a .project-box:hover img{
-    transform: scale(1.1);
-}
-
-a .project-box .project-layer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5s ease;
-}
-
-a .project-box:hover .project-layer{
-    transform: translateY(0);
-}
-
-.project-layer{
-    color: var(--text-color);
-}
-
-.project-layer h4{
-    font-size: 3rem;
-}
-
-.project-layer p{
-    font-size: 1.6rem;
-    margin: 0.3rem 0 1rem;
-}
-
-.project-layer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.project-layer a i{
-    font-size: 2rem;
-    color: var(--snd-bf-color);
 }
 
 .contact{
@@ -467,10 +337,6 @@ form input, form textarea{
     section{
         padding: 10rem 3%;
     }
-    
-    .project{
-        padding-bottom: 7rem;
-    }
     .contact{
         min-height: auto;
     }
@@ -524,19 +390,11 @@ form input, form textarea{
     .about-img img{
         width: 70vw;
     }
-    .project h2{
-        margin-bottom: 3rem;
-    }
-    .project-container{
-        grid-template-columns: 1fr;
-
-    }
 }
 
 
 
 .courses{
-    font-family: 'Poppins';
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -545,7 +403,6 @@ form input, form textarea{
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
-  
   }
   
   .course-row{
