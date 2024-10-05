@@ -539,6 +539,7 @@ form input, form textarea{
     
     .courses{
       padding: 3.5rem;
+      margin-top: 70px;
     }
     .course-row{
       width: 100%;
